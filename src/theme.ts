@@ -16,10 +16,10 @@ const theme = createTheme({
       default: '#f2f4ff',
     },
     primary: {
-      main: '#556cd6',
+      main: '#2a9d8f',
     },
     secondary: {
-      main: '#19857b',
+      main: '#264653',
     },
     error: {
       main: red.A400,
@@ -32,6 +32,27 @@ const theme = createTheme({
     fontFamily: roboto.style.fontFamily,
   },
   components: {
+    MuiTypography: {
+      styleOverrides: {
+        h3: {
+          fontSize: '0.938rem',
+          fontWeight: 700,
+          color: 'black',
+          ":hover":{
+            color: '#2a9d8f',
+          }
+        },
+        h4: {
+          fontSize: '0.875rem',
+          fontWeight: 700,
+        },
+        subtitle1: {
+          fontSize: '0.813rem',
+          color: 'rgb(123, 142, 142)',
+        }
+
+      }
+    },
     MuiCard: {
       defaultProps: {
         raised: true,
