@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import Link from '../src/Link';
 import ProTip from '../src/ProTip';
 import Copyright from '../src/Copyright';
+import { ProblemList } from '../src/Problems';
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <Link href="/about" color="secondary">
           Go to the about page
         </Link>
+        <ProblemList/>
         <ProTip />
         <Copyright />
       </Box>
